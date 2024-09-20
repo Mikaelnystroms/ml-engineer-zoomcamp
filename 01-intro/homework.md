@@ -77,8 +77,8 @@ Has it changed?
 
 > Hint: refer to existing `mode` and `median` functions to complete the task.
 
-- Yes <--------
-- No
+- Yes
+- No <--------
 
 ### Q7. Sum of weights
 
@@ -96,7 +96,7 @@ Has it changed?
 - 0.43
 - 45.29
 - 45.58
-- 91.30
+- 91.30 <--------
 
 
 ## Submit the results
