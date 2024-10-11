@@ -81,7 +81,7 @@ Use the same code as in the lectures
 
 Options:
 
-- With 0
+- With 0 <---------
 - With mean
 - Both are equally good
 
@@ -99,7 +99,7 @@ If there are multiple options, select the smallest `r`.
 
 Options:
 
-- 0
+- 0 <---------
 - 0.01
 - 1
 - 10
@@ -119,7 +119,7 @@ Options:
 What's the value of std?
 
 - 19.176
-- 29.176
+- 29.176 <---------
 - 39.176
 - 49.176
 
@@ -139,7 +139,7 @@ What's the value of std?
 Options:
 
 - 598.60
-- 608.60
+- 608.60 <---------
 - 618.60
 - 628.60
 
