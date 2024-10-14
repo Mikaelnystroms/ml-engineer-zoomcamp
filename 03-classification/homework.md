@@ -49,7 +49,7 @@ What is the most frequent observation (mode) for the column `education`?
 
 - `unknown`
 - `primary`
-- `secondary`
+- `secondary` <----
 - `tertiary`
 
 
@@ -63,7 +63,7 @@ What are the two features that have the biggest correlation?
 - `age` and `balance`
 - `day` and `campaign`
 - `day` and `pdays`
-- `pdays` and `previous`
+- `pdays` and `previous` <----
 
 
 ### Target encoding
@@ -104,7 +104,7 @@ What accuracy did you get?
 - 0.6
 - 0.7
 - 0.8
-- 0.9
+- 0.9 <----
 
 
 ### Question 5 
@@ -120,6 +120,7 @@ Which of following feature has the smallest difference?
 - `balance`
 - `marital`
 - `previous`
+- `housing` <---
 
 > **Note**: The difference doesn't have to be positive.
 
