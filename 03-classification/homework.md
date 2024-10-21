@@ -136,7 +136,7 @@ Which of these `C` leads to the best accuracy on the validation set?
 
 - 0.01
 - 0.1
-- 1
+- 1 <----
 - 10
 - 100
 
