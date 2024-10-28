@@ -1,0 +1,23 @@
+FROM svizor/zoomcamp-model:3.11.5-slim
+
+WORKDIR /app
+
+# Install pipenv
+RUN pip install pipenv
+
+# Copy Pipfile and Pipfile.lock
+COPY Pipfile* .
+
+# Install dependencies
+RUN pipenv install --system --deploy
+
+# Copy Flask app
+COPY homework.py .
+COPY model1.bin .
+COPY dv.bin .
+
+# Expose port
+EXPOSE 8080
+
+# Run with gunicorn
+CMD ["gunicorn", "--bind=0.0.0.0:8080", "homework:app"]
