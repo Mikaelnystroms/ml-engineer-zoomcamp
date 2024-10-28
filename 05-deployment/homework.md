@@ -180,7 +180,7 @@ What's the probability that this client will get a subscription now?
 
 * 0.287
 * 0.530
-* 0.757
+* 0.757 <-----
 * 0.960
 
 
