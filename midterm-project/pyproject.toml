@@ -31,6 +31,7 @@ pandas = "^2.2.3"
 fastapi = "^0.115.5"
 joblib = "^1.4.2"
 pydantic = "^2.10.1"
+gunicorn = "^23.0.0"
 
 
 [build-system]
