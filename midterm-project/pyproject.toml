@@ -32,6 +32,7 @@ fastapi = "^0.115.5"
 joblib = "^1.4.2"
 pydantic = "^2.10.1"
 gunicorn = "^23.0.0"
+uvicorn = "^0.32.1"
 
 
 [build-system]
