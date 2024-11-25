@@ -1,0 +1,38 @@
+[project]
+name = "ml-engineer-zoomcamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.5",
+    "flask>=3.0.3",
+    "gunicorn>=23.0.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.2",
+    "pandas>=2.2.3",
+    "pipenv>=2024.2.0",
+    "scikit-learn>=1.5.2",
+    "seaborn>=0.13.2",
+    "uvicorn>=0.32.1",
+    "xgboost>=2.1.2",
+]
+
+[tool.poetry]
+name = "ml-engineer-zoomcamp"
+version = "0.1.0"
+description = ""
+authors = ["mikaelnystroms <mikaelnystromm@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+fastapi = "^0.115.5"
+joblib = "^1.4.2"
+pydantic = "^2.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
