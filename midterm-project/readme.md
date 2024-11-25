@@ -1,6 +1,10 @@
-# Wine Quality Predictor
+# Wine Quality Predictor 🍷
 
 [Live Demo](https://ml-engineer-zoomcamp.onrender.com)
+
+A web application that predicts wine quality based on physicochemical properties. Simply input the wine's chemical measurements and get an instant quality prediction.
+
+![Wine Quality Predictor Interface](images/wine-predictor-interface.png)
 
 
 # 1. Problem Description
