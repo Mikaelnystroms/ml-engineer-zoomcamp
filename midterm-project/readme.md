@@ -1,7 +1,3 @@
-submit project here : https://courses.datatalks.club/ml-zoomcamp-2024/project/midterm
-
-evaluation criteria : https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vQCwqAtkjl07MTW-SxWUK9GUvMQ3Pv_fF8UadcuIYLgHa0PlNu9BRWtfLgivI8xSCncQs82HDwGXSm3/pubhtml?pli=1
-
 # 1. Problem Description
 
 ## Problem
@@ -31,9 +27,46 @@ Using these features, the model will predict a quality score, helping consumers 
 
 ## Expected Outcome
 The model will provide:
-- Quality predictions on a scale of 0-10
+- Quality predictions on a scale of 0-8
 - Insights into which chemical properties most strongly indicate wine quality
 - A practical tool for making data-driven wine purchasing decisions
 
 This solution bridges the gap between technical wine analysis and practical consumer decision-making, making wine quality assessment more accessible to the average consumer. If deemed good enough, I will also use it myself when buying wine.
+
+# 2. Deployment Instructions (Render)
+
+To deploy this project using Render, follow these steps:
+
+1. **Create a New Web Service**
+   - Go to [Render](https://render.com) and create a new web service.
+   - Connect your GitHub repository containing this project.
+
+2. **Configure Deployment Settings**
+   - Choose the branch you want to deploy (e.g., `main`).
+   - Set the runtime environment to Python 3.
+
+3. **Specify Build and Start Commands**
+   - In the 'Build Command' section, specify the following:
+     ```
+     pip install -r requirements.txt
+     or poetry install, which is the default in Render
+     ```
+   - In the 'Start Command' section, specify the following:
+     ```
+     gunicorn --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 app:app
+     ```
+
+4. **Environment Variables**
+   - Add any necessary environment variables in the 'Environment' section (e.g., API keys or configuration settings). Not needed for this project.
+
+5. **Deploy**
+   - Click 'Create Web Service' to start the deployment.
+   - Render will automatically build and deploy your application.
+
+# Command to Run the Application Using Render
+
+This should be the startup command specified in Render:
+```sh
+CMD ["gunicorn", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "app:app"]
+```
 
