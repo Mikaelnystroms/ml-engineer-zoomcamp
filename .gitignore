@@ -170,3 +170,4 @@ cython_debug/
 *.tiff
 
 */clothing-dataset-small
+*/data
