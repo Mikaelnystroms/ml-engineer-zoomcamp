@@ -171,3 +171,12 @@ cython_debug/
 
 */clothing-dataset-small
 */data
+
+*.csv
+
+# Large files
+*.zip
+*.h5
+*.keras
+*.joblib
+models/
