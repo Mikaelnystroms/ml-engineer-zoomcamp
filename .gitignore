@@ -189,3 +189,21 @@ models/
 # Large data files
 **/data/*.csv
 **/data/*.zip
+
+# models
+models/
+*.pth
+*.pt
+*.pkl
+*.pklz
+*.pickle
+*.keras
+*.joblib
+*.h5
+*.keras
+*.joblib
+*.h5
+*.keras
+*.joblib
+*.h5
+*.tflite

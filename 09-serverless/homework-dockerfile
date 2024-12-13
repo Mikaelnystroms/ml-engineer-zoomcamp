@@ -1,0 +1,12 @@
+FROM agrigorev/model-2024-hairstyle:v3
+
+RUN pip install pillow
+RUN pip install numpy==1.23.0
+
+ADD https://github.com/alexeygrigorev/tflite-aws-lambda/raw/main/tflite/tflite_runtime-2.14.0-cp310-cp310-linux_x86_64.whl .
+# Install TFLite runtime without dependencies to avoid changing numpy
+RUN pip install --no-deps tflite_runtime-2.14.0-cp310-cp310-linux_x86_64.whl
+
+COPY homework.py .
+
+CMD [ "homework.lambda_handler" ]
