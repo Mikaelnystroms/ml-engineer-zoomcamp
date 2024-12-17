@@ -50,7 +50,7 @@ Here `<value>` is the probability of getting a subscription. You need to choose 
 
 * 0.287
 * 0.530
-* 0.757
+* 0.757 <-----
 * 0.960
 
 Now you can stop the container running in Docker.
@@ -67,6 +67,8 @@ You need to install:
 ## Question 2
 
 What's the version of `kind` that you have? 
+
+0.26.0
 
 Use `kind --version` to find out.
 
@@ -92,7 +94,7 @@ What's the smallest deployable computing unit that we can create and manage
 in Kubernetes (`kind` in our case)?
 
 * Node
-* Pod
+* Pod <------
 * Deployment
 * Service
 
@@ -104,7 +106,7 @@ Now let's test if everything works. Use `kubectl` to get the list of running ser
 What's the `Type` of the service that is already running there?
 
 * NodePort
-* ClusterIP
+* ClusterIP <-------
 * ExternalName
 * LoadBalancer
 
@@ -118,7 +120,7 @@ What's the command we need to run for that?
 
 * `kind create cluster`
 * `kind build node-image`
-* `kind load docker-image`
+* `kind load docker-image` <-----
 * `kubectl apply`
 
 
@@ -157,7 +159,7 @@ spec:
 
 Replace `<Image>`, `<Memory>`, `<CPU>`, `<Port>` with the correct values.
 
-What is the value for `<Port>`?
+What is the value for `<Port>`? 9696
 
 Apply this deployment using the appropriate command and get a list of running Pods. 
 You can see one running Pod.
@@ -185,6 +187,7 @@ Fill it in. What do we need to write instead of `<???>`?
 
 Apply this config file.
 
+subscription
 
 ## Testing the service
 
@@ -256,7 +259,7 @@ Within a minute or so, you should see the higher CPU load; and then - more repli
 What was the maximum amount of the replicas during this test?
 
 
-* 1
+* 1 <-----
 * 2
 * 3
 * 4
